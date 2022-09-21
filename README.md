@@ -1,0 +1,2 @@
+# heranca-js
+exemplo

@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Felino_1 = require("./Felino");
+var Le_o_1 = require("./Le\u00E3o");
+var felino = new Felino_1.Felino();
+var simba = new Le_o_1.Leão('Simba');
+felino.emitSom('rugido');
+simba.emitSom('Rugido');
+simba.caça('Javali');
+simba.caça('Zebra', 12);
+simba.caça('Girafa', 1, 'Mamifero');
+var numeros = [];
+var leões = [];
+leões.push(simba);
+var leão1 = new Le_o_1.Leão('Scar');
+var leão2 = new Le_o_1.Leão('Mufasa');
+var leão3 = new Le_o_1.Leão('kofu');
+leões.push(leão1, leão2, leão3);
+leões.pop(); //tira somente o ultimo, se for triar outra posição tera q usar outra função.
+leões.forEach(function (leões) { return (console.log(leões.nome)); });
